@@ -1,12 +1,11 @@
 @import "../../../../styles/_variables";
 
 header {
-  position: relative;
-  display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 5;
+  display: block;
   background-color: inherit;
   width: 100%;
   height: fit-content;
