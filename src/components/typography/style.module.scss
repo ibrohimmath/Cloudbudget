@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.text {
+  &.text-color--black {
+    color: black;
+  }
+  &.text-color--primary {
+    color: $primaryColor;
+  }
+  &.text-color--secondary {
+    color: $secondaryColor;
+  }
+  &.text-color--white {
+    color: white;
+  }
+
+  &.text-family--primary {
+    font-family: $mainFont;
+  }
+  &.text-family--secondary {
+    font-family: $secondaryFont;
+  }
+
+  &.text-size--default {
+    font-size: 1rem;
+  }
+  &.text-size--sm {
+    font-size: 0.7rem;
+  }
+  &.text-size--lg {
+    font-size: 1.5rem;
+  }
+
+  &.text--default {
+    font-weight: 400;
+  }
+  &.text--semibold {
+    font-weight: 550;
+  }
+  &.text--bold {
+    font-weight: 700;
+  }
+}
