@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Navbar from "../layout/components/navbar";
 import { Type, TextColor, TextFamily, TextSize, TextBold } from "../typography";
 import {
   Button,
@@ -17,6 +18,7 @@ export default function Showcase() {
   return (
     <>
       <div className={clsx(cn["showcase"])}>
+        <Navbar />
         <Type
           color={TextColor.white}
           family={TextFamily.primary}

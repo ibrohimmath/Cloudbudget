@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./components/navbar";
+import Showcase from "../../components/showcase";
 import cn from "./style.module.scss";
 
 export default function Layout({ children }) {
   return (
     <>
       <div>
-        <Navbar />
+        <Showcase />
         {children}
       </div>
     </>
