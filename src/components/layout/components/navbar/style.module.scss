@@ -1,16 +1,23 @@
+@import "../../../../styles/_variables";
+
 header {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: inherit;
+  background-color: $primaryColor;
   width: 100%;
   height: fit-content;
+  padding: 2vh 8vw;
+  @media (max-width: 500px) {
+    padding: 2vh 4vw;
+  }
+  @media (max-width: 350px) {
+    padding: 1vh 2vw;
+  }
 }
 nav {
   display: block;
   width: 100%;
-  padding: 1.5rem 0;
-  background-color: red;
 }
