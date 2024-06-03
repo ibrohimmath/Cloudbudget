@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  &.img-radius--sm {
+    border-radius: 5px;
+  }
+  &.img-radius--md {
+    border-radius: 10px;
+  }
+  &.img-radius--lg {
+    border-radius: 16px;
+  }
+}

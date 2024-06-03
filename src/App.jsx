@@ -3,6 +3,8 @@ import clsx from "clsx";
 import Container from "./components/container";
 import Layout from "./components/layout";
 import { Grid, GridCols } from "./components/grid";
+import Image from "./components/image";
+import manageSrc from "./assets/img/manage.jfif";
 import "./index.css";
 import "./styles/global.scss";
 import "./styles/_variables.scss";
