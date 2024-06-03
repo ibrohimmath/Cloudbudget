@@ -2,6 +2,12 @@
 
 .btn {
   width: fit-content;
+  display: block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 15px 0 black;
+  }
 
   &.btn-border--solid {
     border-style: solid;
@@ -60,12 +66,12 @@
   }
 
   &.btn-padding--sm {
-    padding: 0.3rem 1.5rem;
+    padding: 0.2rem 1.5rem;
   }
   &.btn-padding--md {
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem;
   }
   &.btn-padding-lg {
-    padding: 1.2rem 3.5rem;
+    padding: 0.8rem 3.5rem;
   }
 }
