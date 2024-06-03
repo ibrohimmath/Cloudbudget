@@ -43,6 +43,7 @@ export const ButtonPadding = {
 
 export function Button({
   tag = "div",
+  marginTop = "0px",
   borderStyle = ButtonBorderStyle.default,
   borderSize = ButtonBorderSize.default,
   borderColor = ButtonBorderColor.default,
@@ -63,5 +64,9 @@ export function Button({
     cn[padding],
     cn[radius]
   );
-  return <Tag className={classNames}>{children}</Tag>;
+  return (
+    <Tag className={classNames} style={{ marginTop: marginTop }}>
+      {children}
+    </Tag>
+  );
 }

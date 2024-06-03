@@ -62,6 +62,10 @@ export const TextSize = {
   default: "text-size--default",
   sm: "text-size--sm",
   lg: "text-size--lg",
+  xl: "text-size--xl",
+  ["2xl"]: "text-size--2xl",
+  ["3xl"]: "text-size--3xl",
+  ["4xl"]: "text-size--4xl",
 };
 
 export const TextBold = {
@@ -72,6 +76,7 @@ export const TextBold = {
 
 export function Type({
   tag = "span",
+  marginTop = "0px",
   color = TextColor.default,
   family = TextFamily.default,
   size = TextSize.default,
@@ -86,5 +91,9 @@ export function Type({
     cn[size],
     cn[boldness]
   );
-  return <Tag className={classNames}>{children}</Tag>;
+  return (
+    <Tag className={classNames} style={{ marginTop: marginTop }}>
+      {children}
+    </Tag>
+  );
 }
