@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.grid {
+  display: grid;
+  &.grid-col--two {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh 7vw;
+    justify-content: space-between;
+    @media (max-width: 780px) {
+      grid-template-columns: 1fr;
+      .grid-item:first-of-type {
+        order: 2;
+      }
+    }
+  }
+}
