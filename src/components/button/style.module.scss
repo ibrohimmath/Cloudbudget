@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.btn {
+  width: fit-content;
+
+  &.btn-border--solid {
+    border-style: solid;
+  }
+
+  &.btn-border--none {
+    border: none;
+  }
+  &.btn-border--sm {
+    border-width: 1px;
+  }
+  &.btn-border--md {
+    border-width: 2px;
+  }
+  &.btn-border--lg {
+    border-width: 4px;
+  }
+
+  &.btn-border-color--primary {
+    border-color: $primaryColor;
+  }
+  &.btn-border-color--secondary {
+    border-color: $secondaryColor;
+  }
+  &.btn-border-color--black {
+    border-color: black;
+  }
+  &.btn-border-color--white {
+    border-color: white;
+  }
+
+  &.btn-radius--sm {
+    border-radius: 5px;
+  }
+  &.btn-radius--md {
+    border-radius: 8px;
+  }
+  &.btn-radius--lg {
+    border-radius: 14px;
+  }
+
+  &.btn-background--inherit {
+    background-color: inherit;
+  }
+  &.btn-background--primary {
+    background-color: $primaryColor;
+  }
+  &.btn-background--secondary {
+    background-color: $secondaryColor;
+  }
+  &.btn-background--black {
+    background-color: black;
+  }
+  &.btn-background--white {
+    background-color: white;
+  }
+
+  &.btn-padding--sm {
+    padding: 0.3rem 1.5rem;
+  }
+  &.btn-padding--md {
+    padding: 0.8rem 2rem;
+  }
+  &.btn-padding-lg {
+    padding: 1.2rem 3.5rem;
+  }
+}
