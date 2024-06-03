@@ -9,15 +9,34 @@ header {
   background-color: $primaryColor;
   width: 100%;
   height: fit-content;
-  padding: 2vh 8vw;
+  padding: 3vh 8vw;
   @media (max-width: 500px) {
-    padding: 2vh 4vw;
+    padding: 3vh 4vw;
   }
   @media (max-width: 350px) {
-    padding: 1vh 2vw;
+    padding: 2vh 2vw;
   }
 }
 nav {
-  display: block;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+.links {
+  display: flex;
+  gap: 2rem;
+}
+.link__item {
+  transition-duration: 0.4s;
+  a {
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
 }
