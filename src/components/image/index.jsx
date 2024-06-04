@@ -9,6 +9,6 @@ export const ImageRadius = {
   lg: "img-radius--lg",
 };
 
-export default function Image({ src, radius = ImageRadius.default }) {
+export function Image({ src, radius = ImageRadius.default }) {
   return <img className={clsx(cn["img"], cn[radius])} src={src}></img>;
 }
