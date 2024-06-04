@@ -11,6 +11,16 @@ import {
   TextBold,
   TextSize,
 } from "./components/typography";
+import {
+  Button,
+  ButtonBorderSize,
+  ButtonBorderStyle,
+  ButtonBorderColor,
+  ButtonRadius,
+  ButtonBackground,
+  ButtonPadding,
+} from "./components/button";
+import Input from "./components/input";
 import { Image, ImageRadius } from "./components/image";
 import { Home, HomeBackground, HomePadding } from "./pages/home";
 
@@ -449,6 +459,33 @@ export default function App() {
             </div>
             <div>
               <Image radius={ImageRadius.md} src={economySrc}></Image>
+            </div>
+          </Grid>
+        </Home>
+        <Home padding={HomePadding.xl}>
+          <Grid col={GridCols.twoUnReverse}>
+            <div>
+              <Type boldness={TextBold.semibold} size={TextSize.xl}>
+                Напишите нам
+              </Type>
+              <Type size={TextSize.md} marginTop="3rem">
+                Остались вопросы или опасения? Просто заполните форму ниже, и
+                наша служба поддержки свяжется с вами в течение 24 часов.
+              </Type>
+            </div>
+            <div>
+              <Input type="text" placeholder="Имя" />
+              <Input type="text" placeholder="Телефон" marginTop="1rem" />
+              <Button
+                borderRadius={ButtonRadius.md}
+                background={ButtonBackground.primary}
+                padding={ButtonPadding.lg}
+                marginTop="1rem"
+              >
+                <Type size={TextSize.md} color={TextColor.white}>
+                  ОТПРАВИТЬ
+                </Type>
+              </Button>
             </div>
           </Grid>
         </Home>
