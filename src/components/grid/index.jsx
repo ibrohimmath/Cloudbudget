@@ -5,6 +5,7 @@ import cn from "./style.module.scss";
 
 export const GridCols = {
   two: "grid-col--two",
+  twoUnReverse: "grid-col--two-unreverse",
   three: "grid-col--three",
   four: "grid-col--four",
 };
