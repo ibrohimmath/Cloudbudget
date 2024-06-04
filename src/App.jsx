@@ -15,6 +15,7 @@ import { Image, ImageRadius } from "./components/image";
 import { Home, HomeBackground, HomePadding } from "./pages/home";
 
 import manageSrc from "./assets/img/manage.jfif";
+
 import chanceOne from "./assets/img/chance_1.jfif";
 import chanceTwo from "./assets/img/chance_2.jfif";
 import chanceThree from "./assets/img/chance_3.jfif";
@@ -22,6 +23,9 @@ import downloadSrc from "./assets/icons/download.png";
 import searchSrc from "./assets/icons/search.png";
 import pdfSrc from "./assets/icons/pdf.png";
 import csvSrc from "./assets/icons/csv.png";
+import economySrc from "./assets/img/economy.jfif";
+import playStoreSrc from "./assets/icons/ion-logo-google-playstore.png";
+import appStoreSrc from "./assets/icons/ion-logo-apple-appstore.png";
 
 import "./index.css";
 import "./styles/global.scss";
@@ -387,6 +391,66 @@ export default function App() {
               </div>
             </Grid>
           </div>
+        </Home>
+        <Home background={HomeBackground.fourth} padding={HomePadding.lg}>
+          <Grid>
+            <div>
+              <Type
+                color={TextColor.white}
+                family={TextFamily.default}
+                boldness={TextBold.semibold}
+                size={TextSize["2xl"]}
+              >
+                Сосредоточьтесь на <br /> экономии денег
+              </Type>
+              <Type
+                color={TextColor.white}
+                family={TextFamily.default}
+                boldness={TextBold.default}
+                size={TextSize["md"]}
+                marginTop="2.5rem"
+              >
+                <p style={{ textAlign: "justify" }}>
+                  Мы помогаем вам отслеживать ваши привычки в расходах, чтобы вы
+                  могли легко определить и сократить ненужные расходы. Просто
+                  присоединяйтесь сегодня, чтобы начать!
+                </p>
+              </Type>
+              <div
+                className="icon-links"
+                style={{ display: "flex", gap: "2rem", marginTop: "3.5rem" }}
+              >
+                <div className="icon-link">
+                  <img
+                    src={playStoreSrc}
+                    style={{
+                      color: "#ED4C5C",
+                      width: "3rem",
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      borderRadius: "50%",
+                    }}
+                  />
+                </div>
+
+                <div className="icon-link">
+                  <img
+                    src={appStoreSrc}
+                    style={{
+                      color: "#ED4C5C",
+                      width: "3rem",
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      borderRadius: "50%",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <Image radius={ImageRadius.md} src={economySrc}></Image>
+            </div>
+          </Grid>
         </Home>
       </Layout>
     </>

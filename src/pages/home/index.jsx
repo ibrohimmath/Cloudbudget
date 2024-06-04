@@ -8,6 +8,7 @@ export const HomeBackground = {
   primary: "home-background--primary",
   secondary: "home-background--secondary",
   tertiary: "home-background--tertiary",
+  fourth: "home-background--fourth",
 };
 
 export const HomePadding = {
