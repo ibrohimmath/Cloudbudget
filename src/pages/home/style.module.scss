@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.home {
+  &.home-background--primary {
+    background-color: $primaryColor;
+  }
+  &.home-background--secondary {
+    background-color: white;
+  }
+  &.home-background--tertiary {
+    background-color: $backgroundGray;
+  }
+
+  &.home-padding--sm {
+    padding: 2rem 0;
+  }
+  &.home-padding--md {
+    padding: 3rem 0;
+  }
+  &.home-padding--lg {
+    padding: 5rem 0;
+  }
+  &.home-padding--xl {
+    padding: 7rem 0;
+  }
+}
