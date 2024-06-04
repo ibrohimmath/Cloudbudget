@@ -1,6 +1,9 @@
 @import "../../styles/variables";
 
 .home {
+  display: block;
+  min-height: fit-content;
+
   &.home-background--primary {
     background-color: $primaryColor;
   }
